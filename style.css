@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    border-radius: 6px ;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.header-text p{
+    font-size: 18px;
+}
+.header-text h2{
+    font-size: 45px;
+}
+.container i{
+    font-size: 25px;
+}
+
+#boxers{
+    padding: 40px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.boxers-col-1{
+    flex-basis: 65%;
+}
+.boxers-col-2{
+    flex-basis: 35%;
+    padding-right: 10px;
+}
+#boxers .boxers-col-1{
+    width: 100%;
+    border-radius: 15px;
+}
+.boxers-col-1 img{
+    width: 100%;
+    border-radius: 10px;
+}
+#boxers .boxers-col-2{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(180deg,rgb(44, 44, 230),rgb(73, 69, 69));
+}
+
+#buttons .buttons-col-1 button{
+    justify-content: space-around;
+    color: black;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 18px;
+}
+.buttons-col-1{
+    border-radius: 15px;
+    text-align: center;
+}
+#buttons .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+#buttons .buttons-col-2 button{
+    justify-content: space-around;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+}
+.buttons-col-2{
+    border-radius: 12px;
+    text-align: center;
+}
+
+nav .fas{
+    display: none;
+}
+
+
+@media only screen and (max-width : 600px){
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #413337;
+        position: fixed;
+        top: 0;
+        right: -190px;
+        width: 190px;
+        height: 100vh;
+        padding-top: 30px;
+        cursor: pointer;
+        transition: right 0.5s;
+        color: white;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul li a{
+        color: white;
+    }
+}
